@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpotVi</title>
+    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="src/css/historic.css" />
+    <link rel="stylesheet" href="src/css/subscriptions.css" />
+    <link rel="stylesheet" href="src/css/trendingMusics.css" />
+    <link rel="stylesheet" href="src/css/musicNews.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body onload="main()">
+    <header id="header">
+      <img src="src/img/logo-spotivy.png" class="logo-header" alt="logo" />
+      <div id="containerPlayer" class="container-player">
+        <audio id="player" controls autoplay>
+          <source src="" type="audio/mpeg" />
+        </audio>
+      </div>
+    </header>
+
+    <main>
+      <aside>
+        <!-- Favoritos -->
+        <div class="container-subscriptions">
+          <div class="header-subscriptions">
+            <div class="icon-menu">
+              <i class="material-icons" style="font-size: 25px">menu</i>
+            </div>
+            <div class="title">
+              <span>Favoritos</span>
+            </div>
+            <!-- <div class="icon-expand-more">
+              <i class="material-icons" style="font-size: 25px">expand_more</i>
+            </div> -->
+          </div>
+          <div class="body-list-subscriptions">
+            <ul id="listSubscriptions" class="list-subscriptions">
+              <!-- Os itens da lista serão adicionados via JS -->              
+            </ul>
+          </div>
+        </div>        
+      </aside>
+
+      <section class="container-main">
+        <!-- Musicas em alta -->
+        <div class="trending-musics">
+          <div class="title-trending-musics">
+            <p>Em alta</p>
+            <i class="material-icons" style="font-size: 25px; color: red">
+              local_fire_department
+            </i>
+          </div>
+          <div class="container-scroll-list">
+            <button id="btnSlideLeft" class="btn-move-slide-left">
+              <i class="material-icons" style="font-size: 25px">
+                arrow_back_ios
+              </i>
+            </button>
+            <ul id="listTrendingMusics" class="list-cards-trending-musics">
+              <!-- Os itens da lista serão adicionados via JS -->
+            </ul>
+            <button id="btnSlideRight" class="btn-move-slide-rigth">
+              <i class="material-icons" style="font-size: 25px">
+                arrow_forward_ios
+              </i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Resultado da busca -->
+        <div></div>
+
+        <!-- Notícias da musica -->
+        <div class="music-news">
+          <div class="title-music-news">
+            <p>Notícias</p>
+            <i class="material-icons" style="font-size: 25px; color: #1ed760">
+              feed
+            </i>
+          </div>
+          <div class="container-scroll-list-music-news">
+            <ul id="listMusicNews" class="list-cards-music-news">
+              <!-- Os itens da lista serão adicionados via JS -->
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <!-- <span>Desenvolvido por:<strong> Vinicius Carvalho</strong></span> -->
+        <div class="container-icons">
+          <a href="https://github.com/V-Carvalho" target="_blank">
+            <img
+              src="https://skillicons.dev/icons?i=github"
+              class="img-social-networks-icon"
+              alt="Logo Github"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vinicius-a-carvalho/"
+            target="_blank"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=linkedin"
+              class="img-social-networks-icon"
+              alt="Logo Linkedin"
+            />
+          </a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="src/js/index.js" defer></script>
+  </body>
+</html>
