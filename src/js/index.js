@@ -17,12 +17,9 @@ async function getTrendingMusics(url_trending) {
   .then((response) => {
     if (response.status == 200) {  
       return response;
-    } else {
-      // Houve contato com o server mas nada foi retornado, retornar algo personalizado
-    }
+    } 
   })
   .catch((error) => {
-    // Houve algum erro ao tentar fazer a requisição, retornar algo personalizado
     console.log("Houve algum problema!" + error);
   });
 
@@ -202,12 +199,9 @@ async function getMusicNews(url_news) {
     .then((response) => {
       if (response.status == 200) {
         return response;
-      } else {
-        // Houve contato com o server mas nada foi retornado, retornar algo personalizado
-      }
+      } 
     })
     .catch((error) => {
-      // Houve algum erro ao tentar fazer a requisição, retornar algo personalizado
       console.log("Houve algum problema!" + error);
     });
 
