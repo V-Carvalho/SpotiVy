@@ -2,7 +2,7 @@ let startX;
 let scrollLeft;
 let isDown = false;
 
-const URL_API = "https://spotivy.up.railway.app/"
+const URL_API = "https://spotivy.up.railway.app"
 
 async function main() {
   await getTrendingMusics(URL_API);
