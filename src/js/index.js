@@ -2,7 +2,7 @@ let startX;
 let scrollLeft;
 let isDown = false;
 
-const URL_API = "https://44.196.121.92:3000"
+const URL_API = "https://spotivy.up.railway.app/"
 
 async function main() {
   await getTrendingMusics(URL_API);
